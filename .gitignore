@@ -8,3 +8,15 @@ temp/
 projects/
 packaged
 gh-pages
+*.user
+*.sw?
+*.ts.new
+*.tgz
+*.db
+*.suo
+*.log
+.vscode/.BROWSE.VC.DB-shm
+.vscode/.BROWSE.VC.DB-wal
+hexcache
+build
+crowdinstats.csv

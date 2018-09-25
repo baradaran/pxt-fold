@@ -1,11 +1,13 @@
 {
-    "id": "sample",
-    "name": "sample",
-    "title": "MakeCode Editor Sample",
+    "id": "foldio-calliope",
+    "aliases" : ["foldio"]
+    "name" : " foldio editor",
+    "title": "MakeCode target for calliope by foldio",
     "corepkg": "core",
     "cloud": {
         "workspace": false,
-        "packages": true
+        "packages": true,
+        "githubPackages":true
     },
     "bundleddirs": [
         "libs/core"
