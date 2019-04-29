@@ -1,7 +1,7 @@
 {
-  "name": "pxt-sample",
-  "version": "2.0.1",
-  "description": "sample target for PXT",
+  "name": "pxt-fold",
+  "version": "0.0.1",
+  "description": "target for foldio",
   "keywords": [
     "JavaScript",
     "education",
@@ -9,11 +9,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Microsoft/pxt-sample.git"
+    "url": "git+https://github.com/baradaran/pxt-fold.git"
   },
-  "author": "",
+  "author": "Amir Baradaran",
   "license": "MIT",
-  "homepage": "https://github.com/Microsoft/pxt-sample#readme",
+  "homepage": "https://github.com/baradaran/pxt-fold#readme",
   "files": [
     "README.md",
     "pxtarget.json",
@@ -36,6 +36,8 @@
   },
   "dependencies": {
     "pxt-common-packages": "6.5.3",
-    "pxt-core": "^5.12.2"
+    "pxt-core": "^5.12.2",
+    "make": "^0.8.1",
+    "yotta": "^0.1.10"
   }
 }
