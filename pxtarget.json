@@ -6,23 +6,67 @@
     "corepkg": "core",
     "cloud": {
         "workspace": false,
-        "packages": true,
+        "packages": false,
         "githubPackages":true
     },
     "bundleddirs": [
         "libs/core"
     ],
+    "compile": {
+        "isNative": true,
+        "hasHex": true,
+        "deployDrives": "(MICROBIT|MBED)",
+        "driveName": "MICROBIT",
+        "hexMimeType": "application/x-microbit-hex",
+        "openocdScript": "source [find interface/cmsis-dap.cfg]; source [find target/nrf51.cfg]",
+        "flashUsableEnd": 245760,
+        "flashEnd": 245760,
+        "flashCodeAlign": 1024,
+        "floatingPoint": true,
+        "taggedInts": true,
+        "utf8": false,
+        "gc": true,
+        "imageRefTag": 9,
+        "patches": {
+            "0.0.0 - 1.0.0": [
+                {
+                    "type": "package",
+                    "map": {
+                        "microbit": "core"
+                    }
+                }
+            ]
+        },
+        "hidSelectors": [
+            {
+                "usagePage": "0xFF00",
+                "usageId": "0x0001",
+                "vid": "0x0d28",
+                "pid": "0x0204"
+            }
+        ],
+        "webUSB": true,
+        "useNewFunctions": true
+    },
     "runtime": {
-      "mathBlocks": true,
-      "loopsBlocks": true,
-      "logicBlocks": true,
-      "variablesBlocks": true,
-      "textBlocks": true,
-      "functionBlocks": true,
-      "listsBlocks": true 
+      "mathBlocks": false,
+      "loopsBlocks": false,
+      "logicBlocks": false,
+      "variablesBlocks": false,
+      "textBlocks": false,
+      "functionBlocks": false,
+      "listsBlocks": false
     },
     "simulator": {
         "autoRun": true
+    },
+    "compileService": {
+        "yottaTarget": "bbc-microbit-classic-gcc",
+        "yottaCorePackage": "microbit",
+        "githubCorePackage": "lancaster-university/microbit",
+        "gittag": "pxtgc-0",
+        "serviceId": "microbit",
+        "dockerImage": "pext/yotta:latest"
     },
     "appTheme": {
         "logoUrl": "https://github.com/Microsoft/pxt-sample",
